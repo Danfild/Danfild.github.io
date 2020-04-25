@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Новостной портал IT-индустрии</title>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        button {
+            padding: 0;
+            border: none;
+            font: inherit;
+            color: inherit;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        #footer {
+            position: absolute;
+            left: 40%;
+            bottom: 0;
+            padding: 10px;
+        }
+
+        .col {
+
+            background: #0000 /* Цвет фона */
+            /* Ширина блока */
+            padding: 15px; /* Поля */
+            font-size: 1.5em; /* Размер шрифта */
+        }
+
+        .col {
+        }
+
+        .col {
+            width: 400;
+        }
+
+        body {
+            background-image: url(assets/image.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #464646;
+        }
+
+        * {
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: #ffffff;
+        }
+    </style>
+    <link type="text/css" href="assets/style.css" rel="stylesheet">
+</head>
+
+<div class="topnav">
+<a href="index.html">Главная страница</a>
+<a href="news.html">Новости</a>
+<!--<a href="reporters.html">Горячие новости</a>-->
+</div> 
+<br>
+<body> 
+<div>
+<br>
+<h2>Привествуем вас на&nbsp;нашем сайте!</h2>
+<h2>Держим в&nbsp;курсе событий</h2>
+</div>
+
+<form id="subscription-form" class="main">
+<div class="field">
+        <label for="username">Имя пользователя </label>
+        <input id="username" required type="text" name="username">
+    </div>
+
+    <div class="field">
+        <label for="phone-number">Номер телефона </label>
+    <input id="phone-number"  pattern="8[0-9]{10}"required type="tel" name="phone-number">
+    </div>
+
+<div class="field">
+<label for="comment">Ваш комментарий  </label>
+<textarea  id="comment" name="comment"></textarea> 
+</div> 
+
+
+
+<div>
+<button id="guest-subscription">Отправить</button>
+</div>
+
+<div id="submit-message">
+</div>
+<ol id="subscriptions-list"></ol>
+
+<div id="footer">
+&copy;&nbsp;Все права защищены 2020
+</div>
+</form>
+
+
+
+<script src="assets/script.js"></script>
+</body> 
+</html>

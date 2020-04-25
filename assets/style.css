@@ -1,0 +1,33 @@
+* {
+   font-family: 'Russo One', sans-serif;
+}
+
+#index-page-image {
+    width: calc(70% - 15vw);
+}
+
+background-image: url (assets/image.jpg)
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #333;
+    text-align: center;
+    
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.topnav a:hover {
+    background-color: #0000;
+    color: black;
+}
+
+.field {clear:both; text-align:right; line-height: 25px;}
+label {float:left; padding-right: 10px;}
+.main {float:left; padding-bottom: 10px;}
